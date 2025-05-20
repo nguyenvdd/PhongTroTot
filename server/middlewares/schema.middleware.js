@@ -1,0 +1,13 @@
+const Joi = require("joi")
+
+exports.string = Joi.string().allow(null, "")
+exports.stringReq = Joi.string().required()
+exports.numberReq = Joi.number().required()
+exports.dateReq = Joi.date().required()
+exports.number = Joi.number().allow(null, "")
+exports.array = Joi.array().allow(null, "")
+exports.arrayReq = Joi.array().required()
+exports.password = Joi.string().required()
+exports.emailReq = Joi.string()
+  .required()
+  .email({ minDomainSegments: 2, tlds: { allow: ["com", "net"] } })
