@@ -2,10 +2,10 @@
   "name": "phongtro_be",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "server/server.js",
   "scripts": {
-    "dev": "nodemon server.js",
-    "start": "node server.js",
+    "dev": "nodemon server/server.js",
+    "start": "node server/server.js",
     "mig": "npx sequelize-cli db:migrate",
     "mig:undo": "npx sequelize-cli db:migrate",
     "seed": "npx sequelize-cli db:seed:all",
